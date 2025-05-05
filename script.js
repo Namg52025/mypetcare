@@ -1,11 +1,15 @@
 function switchView(view) {
   const isOwner = view === 'owner';
+
+  // Cambia el estado visual de los botones
   document.getElementById('btn-owner').classList.toggle('active', isOwner);
   document.getElementById('btn-ally').classList.toggle('active', !isOwner);
 
+  // Muestra la sección correspondiente
   document.getElementById('benefits-owner').classList.toggle('hidden', !isOwner);
   document.getElementById('benefits-ally').classList.toggle('hidden', isOwner);
 
+  // Cambia el texto y enlace del llamado a la acción (CTA)
   const ctaText = document.getElementById('cta-text');
   const ctaButton = document.getElementById('cta-button');
 
@@ -20,4 +24,5 @@ function switchView(view) {
   }
 }
 
+// Ejecutar automáticamente cuando la página esté lista
 document.addEventListener('DOMContentLoaded', () => switchView('owner'));
