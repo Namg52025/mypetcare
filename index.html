@@ -3,57 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MyPetCare - Collares NFC</title>
+  <title>MyPetCare</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
   <header>
-    <img src="https://mypetcarecl.wordpress.com/wp-content/uploads/2025/04/logo_mypetcare_mejorado.png" alt="MyPetCare Logo">
+    <div class="blob"></div>
+    <img src="https://mypetcarecl.wordpress.com/wp-content/uploads/2025/04/logo_mypetcare_mejorado.png" alt="Logo MyPetCare">
     <h1>Protegemos lo que más amas</h1>
     <p>Con tecnología NFC para conectar a tu mascota con el mundo. Descubre cómo podemos ayudarte.</p>
     <div class="btn-toggle">
-      <button class="btn active" id="btn-owner" onclick="switchView('owner')">🐶 Soy Dueño de Mascota</button>
-      <button class="btn" id="btn-ally" onclick="switchView('ally')">🏥 Soy Veterinaria o Petshop</button>
+      <button class="btn active" id="btn-owner" onclick="switchView('owner')">🐶 Dueño de Mascota</button>
+      <button class="btn" id="btn-ally" onclick="switchView('ally')">🏥 Veterinaria o Petshop</button>
     </div>
   </header>
 
-  <section id="benefits-owner">
-    <h2 class="section-title">Beneficios para ti y tu mascota 🐾</h2>
+  <section id="benefits-owner" data-aos="fade-up">
+    <h2>Beneficios para ti y tu mascota 🐾</h2>
     <div class="grid">
-      <div class="card"><div class="card-icon">🔒</div><h3>Protección Total</h3><p>Identificación inmediata si se pierde.</p></div>
-      <div class="card"><div class="card-icon">💉</div><h3>Historial Médico</h3><p>Acceso a vacunas y tratamientos.</p></div>
-      <div class="card"><div class="card-icon">📱</div><h3>Escaneo NFC</h3><p>Desde cualquier smartphone.</p></div>
-      <div class="card"><div class="card-icon">💬</div><h3>Comunidad</h3><p>Descuentos en servicios y productos.</p></div>
-      <div class="card"><div class="card-icon">🎁</div><h3>Referidos</h3><p>Gana premios invitando amigos.</p></div>
+      <div class="card">🔒<h3>Protección Total</h3><p>Identificación inmediata si se pierde.</p></div>
+      <div class="card">💉<h3>Historial Médico</h3><p>Accede a vacunas y tratamientos.</p></div>
+      <div class="card">📱<h3>Escaneo NFC</h3><p>Desde cualquier smartphone.</p></div>
+      <div class="card">💬<h3>Comunidad</h3><p>Descuentos en servicios y productos.</p></div>
+      <div class="card">🎁<h3>Referidos</h3><p>Gana premios invitando amigos.</p></div>
     </div>
   </section>
 
-  <section id="benefits-ally" class="hidden">
-    <h2 class="section-title">Beneficios para tu negocio 🚀</h2>
+  <section id="benefits-ally" class="hidden" data-aos="fade-up">
+    <h2>Beneficios para tu negocio 🚀</h2>
     <div class="grid">
-      <div class="card"><div class="card-icon">🤝</div><h3>Más Clientes</h3><p>Fideliza con tecnología útil.</p></div>
-      <div class="card"><div class="card-icon">📍</div><h3>Publicidad Local</h3><p>Visibilidad para negocios cercanos.</p></div>
-      <div class="card"><div class="card-icon">💰</div><h3>Ingresos Extra</h3><p>Gana por cada collar vendido.</p></div>
-      <div class="card"><div class="card-icon">🎯</div><h3>Suscripción Gratuita</h3><p>Cumple metas y recibe beneficios.</p></div>
-      <div class="card"><div class="card-icon">🚀</div><h3>Promociones</h3><p>Visibilidad destacada en campañas.</p></div>
+      <div class="card">🤝<h3>Más Clientes</h3><p>Fideliza con tecnología útil.</p></div>
+      <div class="card">📍<h3>Publicidad Local</h3><p>Visibilidad para negocios cercanos.</p></div>
+      <div class="card">💰<h3>Ingresos Extra</h3><p>Gana por cada collar vendido.</p></div>
+      <div class="card">🎯<h3>Suscripción Gratuita</h3><p>Cumple metas y recibe beneficios.</p></div>
+      <div class="card">🚀<h3>Promociones</h3><p>Visibilidad destacada en campañas.</p></div>
     </div>
   </section>
 
-  <section class="cta" id="cta-section">
-    <h2 class="section-title" id="cta-text">
-      ¿List@ para proteger a tu mascota y tener muchos beneficios? ¡Llena el formulario!
-    </h2>
-    <a href="https://forms.gle/gJkWfisn9NQEF78M6" target="_blank" id="cta-button" class="btn active">📝 Llena el formulario aquí</a>
+  <section class="cta" id="cta-section" data-aos="zoom-in">
+    <h2 id="cta-text">¿List@ para proteger a tu mascota?</h2>
+    <a href="https://forms.gle/gJkWfisn9NQEF78M6" id="cta-button" class="btn large" target="_blank">📝 Llena el formulario aquí</a>
   </section>
 
   <footer>
-    <p>Contacto: <a href="mailto:contacto@mypetcare.cl">contacto@mypetcare.cl</a> |
-      WhatsApp: <a href="https://wa.me/569XXXXXXXX">+56 9 XXXX XXXX</a></p>
+    <p>Contacto: <a href="mailto:contacto@mypetcare.cl">contacto@mypetcare.cl</a> | WhatsApp: <a href="#">+56 9 XXXX XXXX</a></p>
     <p>Síguenos: <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
     <p>&copy; 2025 MyPetCare</p>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
