@@ -14,23 +14,9 @@ header {
   overflow: hidden;
 }
 
-header .overlay {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(255,255,255,0.02);
-  z-index: 0;
-}
-
 header img {
   width: 80px;
-  z-index: 1;
-  position: relative;
   margin-bottom: 20px;
-}
-
-header h1, header p, .btn-toggle {
-  position: relative;
-  z-index: 2;
 }
 
 h1 {
@@ -77,58 +63,59 @@ h2 {
   color: #0b3d91;
 }
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+.accordion {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
 }
 
-.card {
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
-  padding: 30px 20px;
-  width: 260px;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.1);
-}
-
-/* Tooltip */
-.tooltip {
-  position: relative;
+.accordion-item {
+  background: #fff;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  overflow: hidden;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.tooltiptext {
-  visibility: hidden;
-  width: 240px;
-  background-color: #1e40af;
+.accordion-title {
+  padding: 18px 24px;
+  font-weight: 600;
+  background: linear-gradient(to right, #0b3d91, #1e40af);
   color: #fff;
-  text-align: center;
-  border-radius: 10px;
-  padding: 10px 14px;
+  font-size: 1rem;
+  position: relative;
+}
+
+.accordion-title::after {
+  content: "+";
   position: absolute;
-  bottom: 120%;
-  left: 50%;
-  margin-left: -120px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  font-size: 0.9rem;
-  z-index: 5;
+  right: 24px;
+  font-size: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
 }
 
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
+.accordion-item.open .accordion-title::after {
+  content: "−";
 }
 
-/* CTA */
+.accordion-content {
+  max-height: 0;
+  padding: 0 24px;
+  overflow: hidden;
+  font-size: 0.95rem;
+  background-color: #f1f5f9;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.accordion-item.open .accordion-content {
+  max-height: 300px;
+  padding: 16px 24px;
+}
+
 .cta {
   background: #e0f2fe;
   padding: 60px 20px;
@@ -143,6 +130,12 @@ h2 {
   font-size: 1rem;
   text-decoration: none;
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.cta .btn.large:hover {
+  background-color: #ea580c;
 }
 
 footer {
@@ -163,13 +156,15 @@ footer a {
 }
 
 @media (max-width: 768px) {
-  .grid {
-    flex-direction: column;
-    align-items: center;
+  .accordion-title {
+    font-size: 1.1rem;
   }
 
-  .tooltiptext {
-    bottom: auto;
-    top: 110%;
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
   }
 }
