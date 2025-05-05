@@ -20,7 +20,9 @@ function switchView(view) {
 }
 
 function toggleAccordion(el) {
-  el.classList.toggle('open');
+  const isOpen = el.classList.contains('open');
+  document.querySelectorAll('.accordion-item').forEach(item => item.classList.remove('open'));
+  if (!isOpen) el.classList.add('open');
 }
 
 document.addEventListener('DOMContentLoaded', () => switchView('owner'));
