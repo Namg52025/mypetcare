@@ -10,8 +10,6 @@ header {
   color: white;
   text-align: center;
   padding: 100px 20px;
-  position: relative;
-  overflow: hidden;
 }
 
 header img {
@@ -63,38 +61,42 @@ h2 {
   color: #0b3d91;
 }
 
+/* Acordeón */
 .accordion {
   max-width: 700px;
   margin: 0 auto;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .accordion-item {
-  background: #fff;
-  margin-bottom: 10px;
+  background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
   overflow: hidden;
-  cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .accordion-title {
   padding: 18px 24px;
   font-weight: 600;
-  background: linear-gradient(to right, #0b3d91, #1e40af);
-  color: #fff;
+  background: #ffffff;
+  color: #0b3d91;
   font-size: 1rem;
   position: relative;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .accordion-title::after {
   content: "+";
-  position: absolute;
-  right: 24px;
   font-size: 1.5rem;
-  top: 50%;
-  transform: translateY(-50%);
   transition: transform 0.3s ease;
 }
 
@@ -104,18 +106,20 @@ h2 {
 
 .accordion-content {
   max-height: 0;
-  padding: 0 24px;
   overflow: hidden;
-  font-size: 0.95rem;
   background-color: #f1f5f9;
   transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 24px;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .accordion-item.open .accordion-content {
-  max-height: 300px;
   padding: 16px 24px;
+  max-height: 200px;
 }
 
+/* CTA */
 .cta {
   background: #e0f2fe;
   padding: 60px 20px;
@@ -129,7 +133,7 @@ h2 {
   border-radius: 40px;
   font-size: 1rem;
   text-decoration: none;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   display: inline-block;
   transition: all 0.3s ease;
 }
@@ -138,6 +142,7 @@ h2 {
   background-color: #ea580c;
 }
 
+/* Footer */
 footer {
   background: #0b3d91;
   color: white;
@@ -155,16 +160,3 @@ footer a {
   display: none;
 }
 
-@media (max-width: 768px) {
-  .accordion-title {
-    font-size: 1.1rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-}
