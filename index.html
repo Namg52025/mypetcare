@@ -6,7 +6,6 @@
   <title>MyPetCare</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -21,69 +20,81 @@
     </div>
   </header>
 
-  <section id="benefits-owner" data-aos="fade-up">
+  <!-- DUEÑOS -->
+  <section id="benefits-owner">
     <h2>Beneficios para ti y tu mascota 🐾</h2>
-    <div class="grid">
-      <div class="card tooltip">🔒
-        <h3>Protección Total</h3>
-        <p>Identificación inmediata si se pierde.</p>
-        <span class="tooltiptext">Cualquier persona puede escanear el collar y acceder a tu información de contacto y salud de tu mascota.</span>
+    <div class="accordion">
+      <div class="accordion-item" onclick="toggleAccordion(this)">
+        <div class="accordion-title">🔒 Protección Total</div>
+        <div class="accordion-content">
+          Escanea el collar y accede al perfil de tu mascota con datos de contacto, salud y ubicación.
+        </div>
       </div>
-      <div class="card tooltip">💉
-        <h3>Historial Médico</h3>
-        <p>Vacunas y tratamientos disponibles en línea.</p>
-        <span class="tooltiptext">Todo el historial médico centralizado para que tú y tu veterinario lo consulten cuando quieran.</span>
+      <div class="accordion-item" onclick="toggleAccordion(this)">
+        <div class="accordion-title">💉 Historial Médico</div>
+        <div class="accordion-content">
+          Guarda y consulta vacunas y tratamientos desde cualquier celular.
+        </div>
       </div>
-      <div class="card tooltip">📱
-        <h3>Escaneo NFC</h3>
-        <p>Funciona con cualquier celular.</p>
-        <span class="tooltiptext">Sin apps, sin líos. Escaneas con cualquier smartphone y listo.</span>
+      <div class="accordion-item" onclick="toggleAccordion(this)">
+        <div class="accordion-title">📱 Escaneo NFC</div>
+        <div class="accordion-content">
+          Acerca cualquier smartphone al collar NFC y listo. Sin apps, sin complicaciones.
+        </div>
       </div>
-      <div class="card tooltip">💬
-        <h3>Comunidad</h3>
-        <p>Descuentos y beneficios en tiendas.</p>
-        <span class="tooltiptext">Accede a beneficios en servicios, tiendas y veterinarias aliadas.</span>
+      <div class="accordion-item" onclick="toggleAccordion(this)">
+        <div class="accordion-title">💬 Comunidad</div>
+        <div class="accordion-content">
+          Accede a descuentos en servicios y tiendas asociadas a MyPetCare.
+        </div>
       </div>
-      <div class="card tooltip">🎁
-        <h3>Referidos</h3>
-        <p>Premios por invitar amigos.</p>
-        <span class="tooltiptext">Gana collares gratis o atención veterinaria por referir a otros dueños.</span>
+      <div class="accordion-item" onclick="toggleAccordion(this)">
+        <div class="accordion-title">🎁 Referidos</div>
+        <div class="accordion-content">
+          Invita a amigos y gana collares, atención veterinaria y premios exclusivos.
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="benefits-ally" class="hidden" data-aos="fade-up">
+  <!-- VETERINARIAS / PETSHOPS -->
+  <section id="benefits-ally" class="hidden">
     <h2>Beneficios para tu negocio 🚀</h2>
-    <div class="grid">
-      <div class="card tooltip">🤝
-        <h3>Más Clientes</h3>
-        <p>Fideliza y aumenta tus ventas.</p>
-        <span class="tooltiptext">Conviértete en punto de referencia para dueños de mascotas conectados.</span>
+    <div class="accordion">
+      <div class="accordion-item" onclick="toggleAccordion(this)">
+        <div class="accordion-title">🤝 Más Clientes</div>
+        <div class="accordion-content">
+          Fideliza dueños de mascotas con tecnología útil y experiencia digital.
+        </div>
       </div>
-      <div class="card tooltip">📍
-        <h3>Publicidad Local</h3>
-        <p>Mayor visibilidad en tu zona.</p>
-        <span class="tooltiptext">Aparece como aliado recomendado en perfiles NFC de mascotas de tu comuna.</span>
+      <div class="accordion-item" onclick="toggleAccordion(this)">
+        <div class="accordion-title">📍 Publicidad Local</div>
+        <div class="accordion-content">
+          Aparece como aliado destacado en los perfiles de mascotas cercanas.
+        </div>
       </div>
-      <div class="card tooltip">💰
-        <h3>Ingresos Extra</h3>
-        <p>Vende collares NFC con comisión.</p>
-        <span class="tooltiptext">Obtén ganancias por cada collar vendido desde tu negocio.</span>
+      <div class="accordion-item" onclick="toggleAccordion(this)">
+        <div class="accordion-title">💰 Ingresos Extra</div>
+        <div class="accordion-content">
+          Gana por cada collar vendido en tu clínica o tienda.
+        </div>
       </div>
-      <div class="card tooltip">🎯
-        <h3>Suscripción Gratuita</h3>
-        <p>Recibe beneficios por ventas.</p>
-        <span class="tooltiptext">Cumple metas y gana beneficios exclusivos sin pagar suscripción.</span>
+      <div class="accordion-item" onclick="toggleAccordion(this)">
+        <div class="accordion-title">🎯 Suscripción Gratuita</div>
+        <div class="accordion-content">
+          Cumple metas y obtén beneficios sin pagar mensualidad.
+        </div>
       </div>
-      <div class="card tooltip">🚀
-        <h3>Promociones</h3>
-        <p>Campañas digitales y RRSS.</p>
-        <span class="tooltiptext">Tu negocio aparecerá en campañas masivas de MyPetCare.</span>
+      <div class="accordion-item" onclick="toggleAccordion(this)">
+        <div class="accordion-title">🚀 Promociones</div>
+        <div class="accordion-content">
+          Participa en campañas digitales y visibilidad en redes sociales.
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="cta" id="cta-section" data-aos="zoom-in">
+  <section class="cta" id="cta-section">
     <h2 id="cta-text">¿List@ para proteger a tu mascota?</h2>
     <a href="https://forms.gle/gJkWfisn9NQEF78M6" id="cta-button" class="btn large" target="_blank">📝 Llena el formulario aquí</a>
   </section>
@@ -94,9 +105,6 @@
     <p>&copy; 2025 MyPetCare</p>
   </footer>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
-  <script>AOS.init();</script>
 </body>
 </html>
-
