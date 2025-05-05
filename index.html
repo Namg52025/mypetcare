@@ -14,35 +14,78 @@
     <div class="blob"></div>
     <img src="https://mypetcarecl.wordpress.com/wp-content/uploads/2025/04/logo_mypetcare_mejorado.png" alt="Logo MyPetCare">
     <h1>Protegemos lo que más amas</h1>
-    <p>Con tecnología NFC para conectar a tu mascota con el mundo. Descubre cómo podemos ayudarte.</p>
+    <p>MyPetCare es la forma más inteligente de cuidar a tu mascota. Con nuestros collares NFC, puedes identificar, proteger y conectar a tu mejor amigo con su información médica, ubicación y comunidad. También ayudamos a veterinarias y petshops a crecer con tecnología real y alianzas locales.</p>
     <div class="btn-toggle">
       <button class="btn active" id="btn-owner" onclick="switchView('owner')">🐶 Dueño de Mascota</button>
       <button class="btn" id="btn-ally" onclick="switchView('ally')">🏥 Veterinaria o Petshop</button>
     </div>
   </header>
 
+  <!-- Dueños de mascotas -->
   <section id="benefits-owner" data-aos="fade-up">
     <h2>Beneficios para ti y tu mascota 🐾</h2>
     <div class="grid">
-      <div class="card">🔒<h3>Protección Total</h3><p>Identificación inmediata si se pierde.</p></div>
-      <div class="card">💉<h3>Historial Médico</h3><p>Accede a vacunas y tratamientos.</p></div>
-      <div class="card">📱<h3>Escaneo NFC</h3><p>Desde cualquier smartphone.</p></div>
-      <div class="card">💬<h3>Comunidad</h3><p>Descuentos en servicios y productos.</p></div>
-      <div class="card">🎁<h3>Referidos</h3><p>Gana premios invitando amigos.</p></div>
+      <div class="card tooltip">🔒
+        <h3>Protección Total</h3>
+        <p>Identificación inmediata si se pierde.</p>
+        <span class="tooltiptext">Si alguien encuentra a tu mascota, escanea su collar NFC y ve al instante su perfil, contacto y estado de salud.</span>
+      </div>
+      <div class="card tooltip">💉
+        <h3>Historial Médico</h3>
+        <p>Accede a vacunas y tratamientos.</p>
+        <span class="tooltiptext">Toda la información médica de tu mascota al alcance de tu mano, accesible en segundos desde cualquier dispositivo.</span>
+      </div>
+      <div class="card tooltip">📱
+        <h3>Escaneo NFC</h3>
+        <p>Desde cualquier smartphone.</p>
+        <span class="tooltiptext">No necesitas apps. Solo acerca tu celular y accede al perfil inteligente de tu mascota en línea.</span>
+      </div>
+      <div class="card tooltip">💬
+        <h3>Comunidad</h3>
+        <p>Descuentos en servicios y productos.</p>
+        <span class="tooltiptext">Beneficios exclusivos en clínicas, tiendas y aliados MyPetCare cerca de ti.</span>
+      </div>
+      <div class="card tooltip">🎁
+        <h3>Referidos</h3>
+        <p>Gana premios invitando amigos.</p>
+        <span class="tooltiptext">Comparte tu experiencia y gana collares gratis, descuentos o atención veterinaria.</span>
+      </div>
     </div>
   </section>
 
+  <!-- Veterinarias / Petshops -->
   <section id="benefits-ally" class="hidden" data-aos="fade-up">
     <h2>Beneficios para tu negocio 🚀</h2>
     <div class="grid">
-      <div class="card">🤝<h3>Más Clientes</h3><p>Fideliza con tecnología útil.</p></div>
-      <div class="card">📍<h3>Publicidad Local</h3><p>Visibilidad para negocios cercanos.</p></div>
-      <div class="card">💰<h3>Ingresos Extra</h3><p>Gana por cada collar vendido.</p></div>
-      <div class="card">🎯<h3>Suscripción Gratuita</h3><p>Cumple metas y recibe beneficios.</p></div>
-      <div class="card">🚀<h3>Promociones</h3><p>Visibilidad destacada en campañas.</p></div>
+      <div class="card tooltip">🤝
+        <h3>Más Clientes</h3>
+        <p>Fideliza con tecnología útil.</p>
+        <span class="tooltiptext">Conecta tu clínica o tienda con clientes que buscan innovación y protección real para sus mascotas.</span>
+      </div>
+      <div class="card tooltip">📍
+        <h3>Publicidad Local</h3>
+        <p>Visibilidad para negocios cercanos.</p>
+        <span class="tooltiptext">Aparece como aliado recomendado en perfiles NFC. Gana tráfico, confianza y posicionamiento local.</span>
+      </div>
+      <div class="card tooltip">💰
+        <h3>Ingresos Extra</h3>
+        <p>Gana por cada collar vendido.</p>
+        <span class="tooltiptext">Recibe comisiones por ventas y ofrece un producto útil que fideliza a tus clientes.</span>
+      </div>
+      <div class="card tooltip">🎯
+        <h3>Suscripción Gratuita</h3>
+        <p>Cumple metas y recibe beneficios.</p>
+        <span class="tooltiptext">Aumenta tu visibilidad y accede a promociones exclusivas por rendimiento.</span>
+      </div>
+      <div class="card tooltip">🚀
+        <h3>Promociones</h3>
+        <p>Visibilidad destacada en campañas.</p>
+        <span class="tooltiptext">Participa en campañas de marketing digital y redes sociales con MyPetCare.</span>
+      </div>
     </div>
   </section>
 
+  <!-- CTA -->
   <section class="cta" id="cta-section" data-aos="zoom-in">
     <h2 id="cta-text">¿List@ para proteger a tu mascota?</h2>
     <a href="https://forms.gle/gJkWfisn9NQEF78M6" id="cta-button" class="btn large" target="_blank">📝 Llena el formulario aquí</a>
