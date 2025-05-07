@@ -13,7 +13,8 @@ header {
 }
 
 header img {
-  width: 80px;
+  width: 50%;
+  max-width: 150px;
   margin-bottom: 20px;
 }
 
