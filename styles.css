@@ -129,3 +129,8 @@ footer a {
 .hidden {
   display: none;
 }
+.about {
+  background-color: #6fb5e3; /* celeste claro */
+  padding: 60px 20px;
+  text-align: center;
+}
