@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MyPetCare - Tecnología con Corazón</title>
+  <title>MyPetCare</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
@@ -12,63 +11,75 @@
 
   <header>
     <img src="https://mypetcarecl.wordpress.com/wp-content/uploads/2025/04/logo_mypetcare_mejorado.png" alt="Logo MyPetCare">
-    <h1>Conectando corazones peludos con tecnología</h1>
-    <p>Collares inteligentes que protegen, informan y cuidan. Para dueños de mascotas y aliados que hacen la diferencia.</p>
+    <h1>Protegemos lo que más amas</h1>
+    <p>Tu mascota no es solo un animal. Es parte de tu historia, de tu hogar… y un miembro más de tu familia. En MyPetCare creamos collares que la cuidan incluso cuando tú no estás cerca. Si se pierde, tiene una forma de volver. Si necesita atención, su información está al alcance. No es solo un accesorio: es tranquilidad, responsabilidad y amor en acción. Y si tienes una veterinaria o petshop, te ayudamos a crecer creando lazos reales con tus clientes y cuidando lo que más importa: la conexión entre las personas y sus animales</p>
     <div class="btn-toggle">
       <button class="btn active" id="btn-owner" onclick="switchView('owner')">🐶 Dueño de Mascota</button>
       <button class="btn" id="btn-ally" onclick="switchView('ally')">🏥 Veterinaria o Petshop</button>
     </div>
   </header>
 
+  <!-- Dueños -->
   <section id="benefits-owner">
     <h2>Beneficios para ti y tu mascota 🐾</h2>
     <div class="accordion">
       <div class="accordion-item" onclick="toggleAccordion(this)">
         <div class="accordion-title">🔒 Protección Total</div>
-        <div class="accordion-content">Perfil digital con datos de contacto, salud y ubicación.</div>
+        <div class="accordion-content">Escanea el collar y accede al perfil de tu mascota con datos de contacto, salud y ubicación.</div>
       </div>
       <div class="accordion-item" onclick="toggleAccordion(this)">
         <div class="accordion-title">💉 Historial Médico</div>
-        <div class="accordion-content">Consulta vacunas y tratamientos desde cualquier dispositivo.</div>
+        <div class="accordion-content">Guarda y consulta vacunas y tratamientos desde cualquier celular.</div>
       </div>
       <div class="accordion-item" onclick="toggleAccordion(this)">
         <div class="accordion-title">📱 Escaneo NFC</div>
-        <div class="accordion-content">Tecnología sin apps. Solo acerca tu celular.</div>
+        <div class="accordion-content">Acerca cualquier smartphone al collar NFC y listo. Sin apps, sin complicaciones.</div>
+      </div>
+      <div class="accordion-item" onclick="toggleAccordion(this)">
+        <div class="accordion-title">💬 Comunidad</div>
+        <div class="accordion-content">Accede a descuentos en servicios y tiendas asociadas a MyPetCare.</div>
       </div>
       <div class="accordion-item" onclick="toggleAccordion(this)">
         <div class="accordion-title">🎁 Referidos</div>
-        <div class="accordion-content">Invita y gana premios, collares y atención veterinaria.</div>
+        <div class="accordion-content">Invita a amigos y gana collares, atención veterinaria y premios exclusivos.</div>
       </div>
     </div>
   </section>
 
+  <!-- Veterinarias / Petshops -->
   <section id="benefits-ally" class="hidden">
     <h2>Beneficios para tu negocio 🚀</h2>
     <div class="accordion">
       <div class="accordion-item" onclick="toggleAccordion(this)">
         <div class="accordion-title">🤝 Más Clientes</div>
-        <div class="accordion-content">Ofrece valor real y crea fidelidad con cada collar.</div>
+        <div class="accordion-content">Fideliza dueños de mascotas con tecnología útil y experiencia digital.</div>
       </div>
       <div class="accordion-item" onclick="toggleAccordion(this)">
         <div class="accordion-title">📍 Publicidad Local</div>
-        <div class="accordion-content">Tu negocio visible en los perfiles de mascotas cercanas.</div>
+        <div class="accordion-content">Aparece como aliado destacado en los perfiles de mascotas cercanas.</div>
       </div>
       <div class="accordion-item" onclick="toggleAccordion(this)">
         <div class="accordion-title">💰 Ingresos Extra</div>
-        <div class="accordion-content">Gana por cada venta sin inversión inicial.</div>
+        <div class="accordion-content">Gana por cada collar vendido en tu clínica o tienda.</div>
+      </div>
+      <div class="accordion-item" onclick="toggleAccordion(this)">
+        <div class="accordion-title">🎯 Suscripción Gratuita</div>
+        <div class="accordion-content">Cumple metas y obtén beneficios sin pagar mensualidad.</div>
       </div>
       <div class="accordion-item" onclick="toggleAccordion(this)">
         <div class="accordion-title">🚀 Promociones</div>
-        <div class="accordion-content">Aumenta tu visibilidad con campañas exclusivas.</div>
+        <div class="accordion-content">Participa en campañas digitales y visibilidad en redes sociales.</div>
       </div>
     </div>
   </section>
 
+  <!-- CTA -->
   <section class="cta" id="cta-section">
     <h2 id="cta-text">¿List@ para proteger a tu mascota?</h2>
     <a href="https://forms.gle/gJkWfisn9NQEF78M6" id="cta-button" class="btn large" target="_blank">📝 Llena el formulario aquí</a>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>Contacto: <a href="mailto:contacto@mypetcare.cl">contacto@mypetcare.cl</a> | WhatsApp: +56 9 XXXX XXXX</p>
     <p>Síguenos: <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
@@ -78,3 +89,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+

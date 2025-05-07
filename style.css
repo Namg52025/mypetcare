@@ -1,32 +1,37 @@
-
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   background: #f9fafb;
   color: #111827;
 }
+
 header {
   background: linear-gradient(to right, #0b3d91, #1e40af);
   color: white;
   text-align: center;
   padding: 100px 20px;
 }
+
 header img {
   width: 80px;
   margin-bottom: 20px;
 }
+
 h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
+
 p {
   font-size: 1.1rem;
   max-width: 700px;
   margin: 0 auto 20px;
 }
+
 .btn-toggle {
   margin-top: 20px;
 }
+
 .btn {
   padding: 12px 24px;
   border-radius: 30px;
@@ -38,20 +43,25 @@ p {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .btn:hover,
 .btn.active {
   background: #ffffff;
   color: #0b3d91;
 }
+
 section {
   padding: 80px 20px;
   text-align: center;
 }
+
 h2 {
   font-size: 2rem;
   margin-bottom: 40px;
   color: #0b3d91;
 }
+
+/* Acordeón */
 .accordion {
   max-width: 700px;
   margin: 0 auto;
@@ -60,6 +70,7 @@ h2 {
   flex-direction: column;
   gap: 12px;
 }
+
 .accordion-item {
   background: #ffffff;
   border-radius: 12px;
@@ -67,23 +78,32 @@ h2 {
   overflow: hidden;
   transition: all 0.3s ease;
 }
+
 .accordion-title {
   padding: 18px 24px;
   font-weight: 600;
   background: #ffffff;
   color: #0b3d91;
   font-size: 1rem;
+  position: relative;
+  border-bottom: 1px solid #eee;
   cursor: pointer;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .accordion-title::after {
   content: "+";
-  float: right;
   font-size: 1.5rem;
   transition: transform 0.3s ease;
 }
+
 .accordion-item.open .accordion-title::after {
   content: "−";
 }
+
 .accordion-content {
   max-height: 0;
   overflow: hidden;
@@ -93,14 +113,18 @@ h2 {
   font-size: 0.95rem;
   line-height: 1.5;
 }
+
 .accordion-item.open .accordion-content {
   padding: 16px 24px;
   max-height: 200px;
 }
+
+/* CTA */
 .cta {
   background: #e0f2fe;
   padding: 60px 20px;
 }
+
 .cta .btn.large {
   background: #f97316;
   color: white;
@@ -109,23 +133,30 @@ h2 {
   border-radius: 40px;
   font-size: 1rem;
   text-decoration: none;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   display: inline-block;
   transition: all 0.3s ease;
 }
+
 .cta .btn.large:hover {
   background-color: #ea580c;
 }
+
+/* Footer */
 footer {
   background: #0b3d91;
   color: white;
   text-align: center;
   padding: 30px 20px;
 }
+
 footer a {
   color: #f97316;
   text-decoration: none;
   font-weight: bold;
 }
+
 .hidden {
   display: none;
 }
+
