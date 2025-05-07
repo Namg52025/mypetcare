@@ -129,8 +129,71 @@ footer a {
 .hidden {
   display: none;
 }
-.about {
-  background-color: #6fb5e3; /* celeste claro */
+.about-accordion {
+  background-color: #e0f2fe;
   padding: 60px 20px;
   text-align: center;
+}
+
+.about-accordion h2 {
+  font-size: 2rem;
+  color: #0b3d91;
+  margin-bottom: 40px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-grid .accordion-item {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.about-grid .accordion-title {
+  padding: 18px 24px;
+  font-weight: 600;
+  background: #ffffff;
+  color: #0b3d91;
+  font-size: 1rem;
+  position: relative;
+  border-bottom: 1px solid #eee;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-grid .accordion-title::after {
+  content: "+";
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.about-grid .accordion-item.open .accordion-title::after {
+  content: "−";
+}
+
+.about-grid .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f1f5f9;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 24px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.about-grid .accordion-item.open .accordion-content {
+  padding: 16px 24px;
+  max-height: 300px;
 }
