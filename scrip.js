@@ -1,4 +1,3 @@
-
 function switchView(view) {
   const isOwner = view === 'owner';
   document.getElementById('btn-owner').classList.toggle('active', isOwner);
